@@ -189,6 +189,8 @@
     object-fit: cover;
     object-position: center 62%;
   }
+  /* lift very dark photos so captions stay readable */
+  .band.dim img { filter: brightness(1.14) saturate(1.04); }
   .band-caption {
     position: absolute;
     left: 50%;
@@ -302,7 +304,7 @@
     </section>
   </main>
 
-  <section class="band" aria-label="Sunlight streaming through a golden forest">
+  <section class="band dim" aria-label="Sunlight streaming through a golden forest">
     <img src="images/12670433.jpg" alt="Golden sun rays through a forest" loading="lazy">
     <p class="band-caption">Let light find you wherever you go</p>
   </section>
